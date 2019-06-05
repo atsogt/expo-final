@@ -26,6 +26,7 @@ const s3 = new AWS.S3();
 const { addContactForm } = require("./controllers/contactForm");
 
 app.use(express.json());
+app.use(express.static(`${__dirname}/../build`));
 const {
   editPage,
   signup,
