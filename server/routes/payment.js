@@ -1,8 +1,8 @@
 // const paymentApi = require("./payment");
-const configureRoutes = app => {
-  paymentApi(app);
-};
-module.exports = configureRoutes;
+// const configureRoutes = app => {
+//   paymentApi(app);
+// };
+// module.exports = configureRoutes;
 
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const stripeChargeCallback = res => (stripeErr, stripeRes) => {
