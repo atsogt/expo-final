@@ -7,12 +7,12 @@ import store from "./store";
 import Home from "./components/home/home";
 
 import routes from "./routes";
-
+//git instal
 function App() {
   return (
     <Provider store={store}>
       <HashRouter>
-        <div className="App">{routes}</div>\{" "}
+        <div className='App'>{routes}</div>\{" "}
       </HashRouter>
     </Provider>
   );

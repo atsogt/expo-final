@@ -10,6 +10,8 @@ const fileType = require("file-type");
 const bluebird = require("bluebird");
 const multiparty = require("multiparty");
 
+//digital ocean
+
 AWS.config.update({
   // region: "us-east-2",
   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
